@@ -1,0 +1,836 @@
+/*Page pour adhèrer à l'association*/
+
+.bodyAdherer {
+  background-image: url(../imgs/Stand-De-LÃ©gumes-151.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  /*rendre la video plus sombre*/
+
+  /* une boucle infinie de la video */
+  background-repeat: no-repeat;
+}
+
+.titreAdh {
+  color: white;
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  /* Contour des lettres en blanc*/
+  text-shadow: 2px 2px 2px orange;
+}
+
+.titreAdh2 {
+  color: white;
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 20px;
+  /* Contour des lettres en blanc*/
+  text-shadow: 2px 2px 2px orange;
+}
+
+.formsAdh {
+  display: flex;
+  /*centrer les deux formulaires*/
+  justify-content: center;
+}
+
+/*Formulaire infos perso */
+.box {
+  outline: 3px solid orange;
+  width: 40%;
+  margin-left: 28px;
+  margin-top: 25px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-radius: 0px 30px 0px 0px;
+  background-color: white;
+}
+
+.box-header,
+.box-header2 {
+  text-align: center;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  color: orange;
+}
+
+.box-header p {
+  font-size: 10px;
+  color: #000;
+}
+
+.box-header2 p {
+  font-size: 10px;
+  color: red;
+}
+
+.box-body,
+.box-body2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: white;
+}
+
+.form-group,
+.form-group2 {
+  margin-bottom: 10px;
+}
+
+.labelNom,
+.labelPrenom,
+.labelMail,
+.labelTel,
+.labelAdr,
+.labelCommune,
+.labelComments,
+.labelTitu,
+.labelIban,
+.labelBic {
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  color: #000;
+}
+
+.inputForm {
+  border: 1px solid orange;
+  border-radius: 50px;
+  /*Centrer du texte dans l'input*/
+  text-align: center;
+  transition: 0.5s;
+}
+
+.inputForm:hover {
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+
+.inputMessage {
+  border: 1px solid orange;
+  border-radius: 0px 20px 0px 0px;
+}
+
+/*Formulaire infos paiement */
+.box2 {
+  outline: 3px solid orange;
+  width: 40%;
+  height: 50%;
+  margin-left: 28px;
+  margin-top: 25px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-radius: 30px 0px 0px 0px;
+  background-color: white;
+}
+
+.boutonAdh {
+  /*aligner le bouton*/
+  margin-left: 48%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+.btnformAdh {
+  background-color: orange;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+.btnformAdh:hover {
+  background-color: rgb(218, 153, 32);
+  transition: 0.3s;
+  transform: scale(1.1);
+}
+
+/* Page de connexion*/
+
+.bodyCo {
+  background-image: url(../imgs/Stand-De-LÃ©gumes-151.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  /*rendre la video plus sombre*/
+  background-color: rgba(0, 0, 0, 0.8);
+  /* une boucle infinie de la video */
+  background-repeat: no-repeat;
+  /*ne pas afficher la barre de défilement*/
+  overflow: hidden;
+}
+
+.AdhCo {
+  padding: 20px;
+  margin-top: 5%;
+  border-radius: 5px;
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+  background-color: orange;
+}
+
+.connexion {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  border: 3px solid rgb(228, 194, 113);
+  border-radius: 5px;
+  background-color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.divLogin {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.LoginInput {
+  /*faire un input arrondi avec une bordure orange*/
+  border: 1px solid orange;
+  border-radius: 50px;
+  /*Centrer du texte dans l'input*/
+  text-align: center;
+  transition: 0.5s;
+}
+
+.LoginInput:hover {
+  transform: scale(1.1);
+
+  transition: 0.5s;
+}
+
+/*Quand on écrit dans l'input*/
+.LoginInput:focus {
+  background-color: white;
+}
+
+.divMdp {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.MdpInput {
+  /*faire un input arrondi avec une bordure orange*/
+  border: 1px solid orange;
+  border-radius: 50px;
+  text-align: center;
+
+  transition: 0.5s;
+}
+
+.MdpInput:hover {
+  transform: scale(1.1);
+
+  transition: 0.5s;
+}
+
+/*Quand on écrit dans l'input*/
+.MdpInput:focus {
+  background-color: white;
+}
+
+.divBtn {
+  padding-top: 5%;
+}
+
+.BtnCo {
+  background-color: orange;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+.BtnCo:hover {
+  background-color: rgb(218, 153, 32);
+  transition: 0.3s;
+  transform: scale(1.1);
+}
+
+/* Infos Adhérents */
+.InfoAdh {
+  margin-top: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 38%;
+}
+
+.tabs {
+  max-width: 600px;
+
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  background: #fff;
+  border-radius: 10px;
+}
+
+.tabs__head {
+  display: flex;
+  align-items: stretch;
+}
+
+.tabs__toggle {
+  display: flex;
+  width: 33.3334%;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  background-color: fff;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 12px;
+}
+
+.tabs__toggle.is-active {
+  background-color: orange;
+  color: #fff;
+  border-radius: 5px 5px 0 0;
+  transition: 0.3s;
+}
+
+.tabs__toggle:hover {
+  background-color: rgb(194, 132, 16);
+  color: #fff;
+  border-radius: 10px 10px 0px 0px;
+  transition: 0.3s;
+}
+
+.tabs__content {
+  padding: 30px;
+  /* si je suis sur le 4ème onglet je veux qu'il n'y est plus de display: none; */
+  display: none;
+
+  /* si je suis sur le 4ème onglet je veux qu'il y est un display: block; */
+  display: block;
+}
+
+/* Contenus de l'onglet des abonnements */
+.abonnements-content {
+  height: 400px; /* par exemple, ajuster la hauteur selon tes besoins */
+  overflow: auto; /* ajouter une barre de défilement si le contenu dépasse la hauteur définie */
+}
+
+.barre {
+  border: 1px solid orange;
+  border-radius: 50px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+/* Onglet des abonnements sélectionné */
+.tabs__toggle.is-active[data-tab="4"] {
+  font-weight: bold; /* ajouter une indication visuelle que l'onglet est sélectionné */
+}
+
+/* Afficher les contenus de l'onglet des abonnements lorsqu'il est sélectionné */
+[data-tab="4"].is-active .abonnements-content {
+  display: block;
+}
+
+.tabs__content.is-active {
+  display: block;
+}
+
+.tabs__title {
+  font-size: 18px;
+  color: #000;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.tabs__text {
+  font-size: 18px;
+  color: #000;
+  text-align: center;
+}
+
+.pAdh {
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+.tabs__title {
+  color: orange;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 30px;
+}
+
+#iconUser {
+  font-size: 25px;
+  padding-right: 10px;
+  /*aligner le texte avec l'icone*/
+  vertical-align: middle;
+}
+
+.inputModifAdh {
+  border: 1px solid orange;
+  border-radius: 50px;
+  /*Centrer du texte dans l'input*/
+  text-align: center;
+  transition: 0.5s;
+  /*Centrer l'input*/
+  margin-left: 25%;
+  margin-right: 25%;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  background-color: white;
+}
+
+.inputModifAdh2 {
+  border: 1px solid orange;
+  border-radius: 50px;
+  /*Centrer du texte dans l'input*/
+  text-align: center;
+  transition: 0.5s;
+  /*Centrer l'input*/
+  margin-left: 25%;
+  margin-right: 25%;
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  background-color: white;
+}
+
+.inputModifAdh:hover,
+.inputModifAdh2:hover {
+  transition: 0.5s;
+  transform: scale(1.1);
+  background-color: white;
+}
+
+.modifdiv {
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.btnValidModif {
+  background-color: orange;
+  border: none;
+  color: white;
+  /* Centrer le bouton */
+  margin-left: 26%;
+  margin-right: 25%;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+
+  font-size: 16px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: 0.5s;
+}
+
+.btnValidModif:hover {
+  background-color: rgb(218, 153, 32);
+  transition: 0.3s;
+  transform: scale(1.1);
+}
+
+.bodyInfoCompte {
+  /* background dégradé du orange au blanc */
+  background: linear-gradient(
+    90deg,
+    rgba(255, 165, 0, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+.pInfosPaiement {
+  text-align: center;
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(255, 0, 0);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.divErreur
+/* mettre la div en dessous du formulaire */ {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.erreurCo {
+  text-align: center;
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(255, 0, 0);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.form-controlAdh {
+  border: 1px solid orange;
+  border-radius: 50px;
+  /*Centrer du texte dans l'input*/
+  text-align: center;
+  transition: 0.5s;
+  /*Centrer l'input*/
+  margin-left: 25%;
+  margin-right: 25%;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  background-color: white;
+}
+
+.radio {
+  /* aligner les boutons radio */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 60%;
+  font-family: "Montserrat", sans-serif;
+}
+
+.radioForm {
+  /* rapprocher les boutons radio */
+  margin-right: 10px;
+  margin-left: 10px;
+  padding: 5px;
+}
+
+.inputModifAdh3 {
+  border: 1px solid orange;
+  border-radius: 50px;
+  /*Centrer du texte dans l'input*/
+  text-align: center;
+  transition: 0.5s;
+  /*Centrer l'input*/
+  margin-left: 25%;
+  margin-right: 25%;
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  background-color: white;
+  /*élargir l'input en fonction du texte*/
+  height: 100%;
+  /*mettre le texte a la ligne après 10 caractères*/
+  word-wrap: break-word;
+}
+
+.radioContact {
+  /*aligner les boutons radio au centre*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15%;
+  font-family: "Montserrat", sans-serif;
+  /*rapprocher le texte des boutons radio*/
+  margin-left: 10px;
+}
+
+.ulInfosPaiement {
+  /*centrer le texte*/
+  text-align: center;
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  color: black;
+  /*pas de style de liste*/
+  list-style-type: none;
+  /*marge en dessous du titre*/
+  padding: 10px;
+}
+
+.liInfosPaiement {
+  /*centrer le texte*/
+  text-align: center;
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  color: red;
+  padding: 10px;
+}
+
+#subicon {
+  font-size: 25px;
+}
+
+.panier__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding-bottom: 31px;
+}
+
+/*-------------------CSS PAGE ABONNEMENT-------------------*/
+
+.desc_abo {
+  /*center the text*/
+  text-align: center;
+  font-size: 15px;
+  padding-top: 5px;
+  font-family: "Montserrat", sans-serif;
+  color: black;
+}
+
+.abo {
+  outline: 3px solid rgb(255, 220, 155);
+  border-radius: 50px;
+  /*Aligner les éléments*/
+  display: flex;
+  height: 35%;
+  width: 60%;
+  background-color: orange;
+  /*centrer la div*/
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 50px;
+}
+
+.abo__img {
+  aspect-ratio: 1/1;
+  object-fit: contain;
+  transition: 0.5s;
+}
+
+/*Quand on passe la souris sur l'image*/
+.abo__img:hover {
+  /*centrer l'image*/
+  margin-left: 20%;
+  margin-right: 20%;
+
+  /*agrandir l'image*/
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+#imgPanierAbo {
+  /*l'image doit etre de 450 sur 450*/
+  width: 450px;
+  height: 450px;
+}
+.abo__content {
+  /*centrer la div au centre de la page*/
+  padding-top: 23%;
+  padding-right: 10%;
+}
+
+.abo__title {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
+.abo__desc {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
+/*Quand abo_img est en hover, le texte disparait*/
+.abo__img:hover ~ .abo__content {
+  display: none;
+}
+
+.AdhAbo {
+  outline: 3px solid rgb(255, 220, 155);
+  border-radius: 50px;
+  /*Aligner les éléments*/
+
+  height: 25%;
+  width: 60%;
+  background-color: orange;
+  /*centrer la div*/
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 50px;
+}
+
+.adh__titre {
+  /*centrer le titre*/
+  text-align: center;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  padding-top: 10px;
+}
+
+.adh__content {
+  /*mettre la div en dessous du titre*/
+  padding-top: 25px;
+  /*centrer le texte*/
+  text-align: center;
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  /*espage entre les lignes*/
+  line-height: 1.5;
+  color: white;
+}
+
+.dateAbo {
+  outline: 3px solid rgb(255, 220, 155);
+  border-radius: 50px;
+  /*Aligner les éléments*/
+
+  height: 25%;
+  width: 60%;
+  background-color: orange;
+  /*centrer la div*/
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+.titreDateAbo {
+  /*centrer le titre*/
+  text-align: center;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  padding-top: 10px;
+}
+
+.pDateAbo {
+  /*centrer le texte*/
+  text-align: center;
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
+.date__content__select {
+  /*display: flex;*/
+  font-size: 15px;
+  /*Mettre en petit les boutons*/
+  width: 60%;
+  /*centrer les boutons*/
+  margin-left: 5%;
+  padding-top: 5%;
+  /*Forcer le tedt à rester sur une ligne*/
+  white-space: nowrap;
+  /*centrer le texte*/
+  text-align: center;
+}
+
+.labelRecup {
+  /*aligner le texte aux boutons radio*/
+  /*display: flex;*/
+  justify-content: center;
+  align-items: center;
+  margin-right: 50px;
+  font-family: "Montserrat", sans-serif;
+  /*rapprocher le texte des boutons radio*/
+  margin-left: 10px;
+  color: white;
+}
+
+.divBtnAbo {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding-top: 15px;
+}
+
+.btnAbo {
+  border-radius: 50px;
+  width: 20%;
+  background-color: green;
+  color: white;
+  /*pas de bord*/
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.btnAbo:hover {
+  background-color: rgb(255, 220, 155);
+  transition: 0.5s;
+}
+
+.titreWarning {
+  /*centrer le titre*/
+  text-align: center;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  color: orange;
+  padding-top: 10px;
+}
+
+.info_manquante {
+  /*centrer le texte*/
+  text-align: center;
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  color: black;
+}
+
+.div_btn_modif {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding-top: 15px;
+}
+
+.btn_modif {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+  background-color: orange;
+  border: none;
+  padding: 10px 20px;
+
+  cursor: pointer;
+  transition: 0.5s;
+  margin: 10px;
+  color: white;
+  border-radius: 50px;
+  transition: 0.5s;
+}
+
+.btn_modif:hover {
+  background-color: rgb(255, 220, 155);
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+
+#aboActu {
+  color: green;
+}
