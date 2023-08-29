@@ -22,6 +22,3 @@ function get_adherent ($wMail, $wMdp) {
     $adherent = $req->fetch();
     return $adherent;
 }
-
-
-?>

@@ -30,3 +30,29 @@ function getLesAbonnements($id)
     $lesAbonnements = $req->fetchAll();
     return $lesAbonnements;
 }
+
+
+/**
+ * Compte le nombre d'abonnements pour un adhérent donné.
+ *
+ * @param int $id Identifiant de l'adhérent
+ *
+ * @return int Le nombre d'abonnements
+ */
+function countAbonnement(int $id): int
+{
+    // Récupère la connexion à la base de données
+    global $bdd;
+
+    // Prépare la requête SQL pour compter les abonnements
+    $stmt = $bdd->prepare('SELECT COUNT(*) FROM abonnement WHERE idAdh = ?');
+
+    // Exécute la requête en remplaçant le marqueur de paramètre par l'identifiant de l'adhérent
+    $stmt->execute([$id]);
+
+    // Récupère le résultat de la requête sous forme de tableau associatif
+    $result = $stmt->fetch(PDO::FETCH_ASSOC);
+
+    // Retourne le nombre d'abonnements comptés
+    return (int) $result['COUNT(*)'];
+}

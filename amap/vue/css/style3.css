@@ -834,3 +834,16 @@
 #aboActu {
   color: green;
 }
+
+.linkAbo {
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  transition: 0.5s;
+}
+
+.linkAbo:hover {
+  color: rgb(237, 158, 10);
+  transition: 0.5s;
+
+  text-decoration: underline;
+}

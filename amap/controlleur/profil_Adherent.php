@@ -8,4 +8,6 @@ $compte = (getCompte($_SESSION['idAdh']));
 
 $lesAbonnements = (getLesAbonnements($_SESSION['idAdh']));
 
+$nbrAbonnement = (countAbonnement($_SESSION['idAdh']));
+
 include_once('vue/infocompte.php');

@@ -152,9 +152,26 @@ include_once('vue/vue_entete.php');
 
                     <div style="max-height: 300px; overflow-y: scroll;" class="tabs__content" id="tab4">
                         <div class='tabs__title'>
-                            <h1 class='tabs__title'>Abonnement</h1>
+                            <?php $nbrAbonnement ?>
+                            <?php if ($nbrAbonnement == 0) {
+                                echo "<p class='pAdh' style = 'color: red;'>Vous n'avez pas d'abonnement pour l'instant</p>";
+                                echo "<p class='pAdh'>Vous pouvez en souscrire un en cliquant sur le lien ci-dessous</p>";
+                                echo "<a class='linkAbo' href='index.php?section=paniers'>Souscrire un abonnement</a>";
+                            } else if ($nbrAbonnement == 1) {
+                                echo "<h1 class='tabs__title'>Abonnement</h1>";
+                            } else {
+                                echo "<h1 class='tabs__title'>Abonnements</h1>";
+                            } ?>
+
+
+
                         </div>
+
                         <?php foreach ($lesAbonnements as $unAbonnement) { ?>
+
+
+
+
                             <div class='abonnements__content'>
 
 
@@ -170,6 +187,10 @@ include_once('vue/vue_entete.php');
                             <!-- une petite barre pour séparer les abonnements
                              -->
                             <div class='barre'></div>
+
+
+
+
 
                         <?php } ?>
                     </div>

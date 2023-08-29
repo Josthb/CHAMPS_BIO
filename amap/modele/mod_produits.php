@@ -17,7 +17,7 @@ function get_produits() {
 function get_detailproduits($idProduit) {
     global $bdd;
 
-    $req = $bdd->prepare("SELECT * FROM produit where idProduit=$idProduit");
+    $req = $bdd->prepare("SELECT * FROM produit where idProduit= $idProduit");
     $req->execute();
     $lesdetailsproduits = $req->fetch();
 
@@ -37,7 +37,3 @@ function get_categproduits($wIdCateg) {
     
    
 }
-
-?>
-
-
